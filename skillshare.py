@@ -29,7 +29,7 @@ class Skillshare(object):
         if not m:
             raise Exception('Failed to parse class ID from URL')
 
-        self.download_course_by_class_id(m.group(1))
+        self.download_course_by_class_id(501297049)
 
     def download_course_by_class_id(self, class_id):
         data = self.fetch_course_data_by_class_id(class_id=class_id)
@@ -181,7 +181,7 @@ class Skillshare(object):
 
 def splash():
 
-    print(r"""   
+    print(r"""   (ori-code:: self.download_course_by_class_id(m.group(1)) )
                  ____  _    _ _ _     _                          ____  _     
                 / ___|| | _(_) | |___| |__   __ _ _ __ ___      |  _ \| |    
                 \___ \| |/ / | | / __| '_ \ / _` | '__/ _ \_____| | | | |    
